@@ -82,7 +82,6 @@ h2 {
 }
 
 .players {
-    width: 240px;
     margin: 0 auto;
     text-align: center;
 }
@@ -92,9 +91,6 @@ h2 {
     margin-right: 50px;
 }
 
-.player-two-bottom {
-    display: none;
-}
 /***********************
     Game Styles
 ************************/
@@ -144,29 +140,13 @@ h2 {
 /*iPhone portrait*/
 
 @media only screen and (min-width: 320px) {
-    body {
-        color: purple;
-    }
-
-/***********************
-    Header
-************************/
-
     h1 {
         margin-left: 10px;
     }
 
-/***********************
-     Players
-************************/    
-
-    .players-two-bottom {
-        display: none;
+    .players {
+        width: 240px;
     }
-
-/***********************
-     Game
-************************/ 
 
     .game {
         width: 300px;
@@ -210,163 +190,162 @@ h2 {
     }
 }
 
-
 /*iPhone landscape*/
 
 @media only screen and (min-width: 480px) {
-    body {
-        color: green;
-    }
 
     h1 {
-    margin-left: 20px;
-}
+        margin-left: 20px;
+    }
 
+    #reset-btn {
+        margin-right: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .players {
+        width: 400px;
+    }
+
+    .game {
+        width: 450px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fa-circle-o {
+        padding-left: 20px;
+        margin-top: 15px; 
+        font-size: 100px;
+    }
+
+    .fa-times {
+        padding-left: 15px;
+        font-size: 120px;
+    }
+
+    .row-top,
+    .row-middle,
+    .row-bottom {
+        width: 450px;
+        height: 150px;
+    }
+
+    .top-1, 
+    .top-2,
+    .top-3,
+    .middle-1,
+    .middle-2,
+    .middle-3,
+    .bottom-1,
+    .bottom-2,
+    .bottom-3 {
+        width: 150px;
+        height: 150px;
+    }
+}
 
 /*ipad potrait*/
 
-@media only screen and (min-width: 768px) {
-    body {
-        color: red;
+@media only screen and (min-width: 768px) {  
+
+    h2 {
+        font-size: 22px;
     }
-/***********************
-     Players
-************************/    
 
     .players {
-        display: block;
+        width: 450px;
     }
 
-h2 {
-    text-transform: uppercase;
-    font-size: 26px;
-    color: #2c8593;
-}
-.players,
-.game {
-    float: left;
-}
+    .game {
+        margin-top: 60px;
+        width: 500px;
+        height: 500px;
+    }
 
-.players {
-    margin-top: 180px;
-    margin-left: 50px;
-    width: 200px;
-}
+    .fa-circle-o {
+        font-size: 120px;
+    }
 
-.game {
-    margin-top: 30px;
-    width: 500px;
-    height: 500px;
-    margin-bottom: 30px;
-}
+    .fa-times {
+        font-size: 150px;
+    }
 
-.fa-circle-o {
-    color: #2c8593;
-    padding-left: 15px;
-    font-size: 100px;
-}
+    .row-top,
+    .row-middle,
+    .row-bottom {
+        width: 500px;
+        height: 166px;
+    }
 
-.fa-times {
-    color: #2c8593;
-    padding-left: 15px;
-    font-size: 100px;
+    .top-1, 
+    .top-2,
+    .top-3,
+    .middle-1,
+    .middle-2,
+    .middle-3,
+    .bottom-1,
+    .bottom-2,
+    .bottom-3 {
+        width: 166px;
+        height: 166px;
+    }
 }
-
-.row-top,
-.row-middle,
-.row-bottom {
-    width: 500px;
-    height: 166px;
-}
-
-.top-1, 
-.top-2,
-.top-3,
-.middle-1,
-.middle-2,
-.middle-3,
-.bottom-1,
-.bottom-2,
-.bottom-3 {
-    width: 166px;
-    height: 166px;
-    display: inline-block;
-    float: left;
-}
-
-}
-
 
 /*ipad lanscape / small laptop*/
 
 @media only screen and (min-width: 1024px) {
-    body {
-        color: blue;
-    }   /***********************
-     Players
-************************/    
 
-    .players {
-        display: block;
+    h2 {
+        font-size: 26px;
     }
 
-h2 {
-    text-transform: uppercase;
-    font-size: 35px;
-    color: #2c8593;
-}
-.players,
-.game {
-    float: left;
-}
+    .players {
+        margin-top: 180px;
+        width: 150%;
+        position: absolute;
+    }
 
-.players {
-    margin-top: 180px;
-    margin-left: 90px;
-    width: 300px;
-}
+    .player-one {
+        margin-left: 60px;
+    }
 
-.game {
-    margin-top: 30px;
-    width: 600px;
-    height: 600px;
-    margin-bottom: 30px;
-}
+    .game {
+        position: relative;
+        height: 550px;
+    }
 
-.fa-circle-o {
-    color: #2c8593;
-    padding-left: 15px;
-    font-size: 180px;
-}
+    .fa-circle-o {
+        font-size: 150px;
+    }
 
-.fa-times {
-    color: #2c8593;
-    padding-left: 15px;
-    font-size: 200px;
-}
+    .fa-times {
+        font-size: 170px;
+    }
 
-.row-top,
-.row-middle,
-.row-bottom {
-    width: 600px;
-    height: 200px;
-}
+    .row-top,
+    .row-middle,
+    .row-bottom {
+        width: 550px;
+        height: 183px;
+    }
 
-.top-1, 
-.top-2,
-.top-3,
-.middle-1,
-.middle-2,
-.middle-3,
-.bottom-1,
-.bottom-2,
-.bottom-3 {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    float: left;
-}
-
-
- 
+    .top-1, 
+    .top-2,
+    .top-3,
+    .middle-1,
+    .middle-2,
+    .middle-3,
+    .bottom-1,
+    .bottom-2,
+    .bottom-3 {
+        width: 183px;
+        height: 183px;
+    }
 }
