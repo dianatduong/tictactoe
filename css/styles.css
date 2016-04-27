@@ -28,18 +28,6 @@ header {
     height: 75px;
     padding: 20px;
     background-color: #FAFAFA;
-    
-}
-
-.wrapper {
-    clear: both;
-}
-
-.game {
-    margin-top: 30px;
-    width: 600px;
-    height: 600px;
-    margin-bottom: 30px;
 }
 
 #reset-btn {
@@ -59,6 +47,150 @@ header {
   text-decoration: none;
 }
 
+span {
+    color: #2c8593
+}
+
+.top-1,
+.middle-1,
+.bottom-1 {
+    border-right: 15px solid #3fbfd2;
+}
+
+.top-1,
+.top-2,
+.top-3 {
+ border-bottom: 15px solid #3fbfd2;
+}
+
+.top-3,
+.middle-3,
+.bottom-3 {
+    border-left: 15px solid #3fbfd2;
+}
+
+.bottom-1,
+.bottom-2,
+.bottom-3 {
+    border-top: 15px solid #3fbfd2;
+}
+
+
+
+
+/* mobile first approach = (the website was built initialy for mobiles and it will be adapted for desktop)
+This is the ideal way to built websites because it is much easier to adapt from a small screen and low computing power (mobiles) to a large screen and high computing power (desktops)
+*/
+
+
+/*iPhone portrait*/
+
+@media only screen and (min-width: 320px) {
+    body {
+        color: purple;
+    }
+h1 {
+    margin-left: 10px;
+    font-size: 30px;
+    color: #3fbfd2;
+    text-transform: uppercase;
+    float: left;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #2c8593;
+}
+
+.players {
+    display: none;
+}
+.game {
+    width: 300px;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.wrapper { 
+    margin-left: 40px;
+    clear: both;
+}
+
+.row-top,
+.row-middle,
+.row-bottom {
+    width: 300px;
+    height: 100px;
+}
+
+
+.top-1, 
+.top-2,
+.top-3,
+.middle-1,
+.middle-2,
+.middle-3,
+.bottom-1,
+.bottom-2,
+.bottom-3 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    }
+
+
+    .fa-circle-o {
+    color: #2c8593;
+    padding-left: 15px;
+    margin-top: 10px; 
+    font-size: 70px;
+}
+
+.fa-times {
+    color: #2c8593;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 90px;
+}
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (min-width: 480px) {
+    body {
+        color: green;
+    }
+
+    h1 {
+    margin-left: 20px;
+}
+
+
+/*ipad potrait*/
+
+@media only screen and (min-width: 768px) {
+    body {
+        color: red;
+    }
+}
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (min-width: 1024px) {
+    body {
+        color: blue;
+    }
+
+h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #2c8593;
+}
 .players,
 .game {
     float: left;
@@ -71,23 +203,11 @@ header {
 }
 
 
-
-h1 {
-    margin-left: 20px;
-    font-size: 30px;
-    color: #3fbfd2;
-    text-transform: uppercase;
-    float: left;
-}
-
-span {
-    color: #2c8593
-}
-
-h2 {
-    text-transform: uppercase;
-    font-size: 35px;
-    color: #2c8593;
+.game {
+    margin-top: 30px;
+    width: 600px;
+    height: 600px;
+    margin-bottom: 30px;
 }
 
 .fa-circle-o {
@@ -124,27 +244,4 @@ h2 {
     float: left;
 }
 
-
-.top-1,
-.middle-1,
-.bottom-1 {
-    border-right: 15px solid #3fbfd2;
-}
-
-.top-1,
-.top-2,
-.top-3 {
- border-bottom: 15px solid #3fbfd2;
-}
-
-.top-3,
-.middle-3,
-.bottom-3 {
-    border-left: 15px solid #3fbfd2;
-}
-
-.bottom-1,
-.bottom-2,
-.bottom-3 {
-    border-top: 15px solid #3fbfd2;
 }
