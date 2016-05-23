@@ -1,0 +1,22 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Thinkful Tic Tac Toe Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onesixdee/tictactoe.git"
+  },
+  "author": "Diana Duong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onesixdee/tictactoe/issues"
+  },
+  "homepage": "https://github.com/onesixdee/tictactoe#readme",
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
