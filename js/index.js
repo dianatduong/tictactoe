@@ -1,4 +1,7 @@
-$(function() {
+// require jQuery
+var $ = require('jquery');
+
+$(document).ready(function() {
   var player = 1;
   var playerTwo = $('.playerTwo')
   $('.square').click(function() {
