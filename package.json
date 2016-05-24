@@ -4,7 +4,16 @@
   "description": "Thinkful Tic Tac Toe Game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "mkdir": "mkdir -p build",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css",
+    "watch": "npm run watch:html & npm run watch:css",
+    "clean": "rm -rf build",
+    "build:html": "npm run clean:html && cp index.html build/",
+    "clean:html": "rm -f build/index.html",
+    "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
+    "build:css": "npm run clean:css && lessc --source-map css/index.less build/$npm_package_name.$npm_package_version.css",
+    "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
+    "clean:css": "rm -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map"
   },
   "repository": {
     "type": "git",
@@ -18,5 +27,9 @@
   "homepage": "https://github.com/onesixdee/tictactoe#readme",
   "dependencies": {
     "jquery": "^2.2.4"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "less": "^2.7.1"
   }
 }

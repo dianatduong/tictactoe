@@ -1,0 +1,321 @@
+/***********************
+   Variables
+************************/
+/***********************
+    General Styles
+************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+}
+body {
+  background-color: #ebf8fa;
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif;
+  letter-spacing: 0.08px;
+}
+/***********************
+    Header
+************************/
+header {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 50px;
+  padding: 5px;
+  background-color: #FAFAFA;
+}
+h1 {
+  font-size: 30px;
+  color: #3fbfd2;
+  text-transform: uppercase;
+  float: left;
+  margin-left: 20px;
+}
+span {
+  color: #2c8593;
+}
+#reset-btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #2c8593;
+  padding: 8px 20px;
+  border: none;
+  float: right;
+  margin: 0.67em 10px 0.67em 0;
+}
+#reset-btn:hover {
+  background-color: #1f5f69;
+  text-decoration: none;
+}
+/***********************
+    Wrapper
+************************/
+.wrapper {
+  clear: both;
+}
+/***********************
+    Players 
+************************/
+h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #3fbfd2;
+}
+.players {
+  margin: 0 auto;
+  text-align: center;
+}
+.player-one {
+  float: left;
+  margin-right: 50px;
+}
+/***********************
+    Game Styles
+************************/
+.game {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-1,
+.top-2,
+.top-3,
+.middle-1,
+.middle-2,
+.middle-3,
+.bottom-1,
+.bottom-2,
+.bottom-3 {
+  display: inline-block;
+  float: left;
+}
+.top-1,
+.middle-1,
+.bottom-1 {
+  border-right: 15px solid #3fbfd2;
+}
+.top-1,
+.top-2,
+.top-3 {
+  border-bottom: 15px solid #3fbfd2;
+}
+.top-3,
+.middle-3,
+.bottom-3 {
+  border-left: 15px solid #3fbfd2;
+}
+.bottom-1,
+.bottom-2,
+.bottom-3 {
+  border-top: 15px solid #3fbfd2;
+}
+.fa-circle-o,
+.fa-times {
+  color: #2c8593;
+}
+/***********************
+   Footer
+************************/
+.footer {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #2c8593;
+  background-color: #FAFAFA;
+}
+li {
+  display: inline-block;
+  font-size: 26px;
+  padding: 10px;
+}
+li a {
+  color: #2c8593;
+}
+.copyright,
+.dedicate {
+  font-size: 12px;
+}
+.dedicate {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/*iPhone portrait*/
+@media only screen and (min-width: 320px) {
+  .players {
+    width: 240px;
+  }
+  .game {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .row-top,
+  .row-middle,
+  .row-bottom {
+    width: 300px;
+    height: 100px;
+  }
+  .top-1,
+  .top-2,
+  .top-3,
+  .middle-1,
+  .middle-2,
+  .middle-3,
+  .bottom-1,
+  .bottom-2,
+  .bottom-3 {
+    width: 100px;
+    height: 100px;
+  }
+  .fa-circle-o {
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 70px;
+  }
+  .fa-times {
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 90px;
+  }
+}
+/*iPhone landscape*/
+@media only screen and (min-width: 480px) {
+  h1 {
+    margin-left: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .players {
+    width: 400px;
+  }
+  .game {
+    width: 450px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fa-circle-o {
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 100px;
+  }
+  .fa-times {
+    padding-left: 15px;
+    font-size: 120px;
+  }
+  .row-top,
+  .row-middle,
+  .row-bottom {
+    width: 450px;
+    height: 150px;
+  }
+  .top-1,
+  .top-2,
+  .top-3,
+  .middle-1,
+  .middle-2,
+  .middle-3,
+  .bottom-1,
+  .bottom-2,
+  .bottom-3 {
+    width: 150px;
+    height: 150px;
+  }
+}
+/*ipad potrait*/
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+  .players {
+    width: 450px;
+  }
+  .game {
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+  }
+  .fa-circle-o {
+    font-size: 120px;
+  }
+  .fa-times {
+    font-size: 150px;
+  }
+  .row-top,
+  .row-middle,
+  .row-bottom {
+    width: 500px;
+    height: 166px;
+  }
+  .top-1,
+  .top-2,
+  .top-3,
+  .middle-1,
+  .middle-2,
+  .middle-3,
+  .bottom-1,
+  .bottom-2,
+  .bottom-3 {
+    width: 166px;
+    height: 166px;
+  }
+}
+/*ipad lanscape / small laptop*/
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 26px;
+  }
+  .players {
+    margin-top: 180px;
+    width: 150%;
+    position: absolute;
+  }
+  .player-one {
+    margin-left: 60px;
+  }
+  .game {
+    position: relative;
+    height: 550px;
+  }
+  .fa-circle-o {
+    font-size: 150px;
+  }
+  .fa-times {
+    font-size: 170px;
+  }
+  .row-top,
+  .row-middle,
+  .row-bottom {
+    width: 550px;
+    height: 183px;
+  }
+  .top-1,
+  .top-2,
+  .top-3,
+  .middle-1,
+  .middle-2,
+  .middle-3,
+  .bottom-1,
+  .bottom-2,
+  .bottom-3 {
+    width: 183px;
+    height: 183px;
+  }
+}
+/*# sourceMappingURL=tictactoe.1.0.0.css.map */
