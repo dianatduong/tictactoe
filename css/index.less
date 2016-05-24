@@ -5,8 +5,6 @@
 @teal: #2c8593; 
 @dark-teal: #1f5f69; 
 @light-gray: #FAFAFA; 
-
-
 @border-styles: 15px solid @bright-blue;
 
 
@@ -53,10 +51,9 @@ h1 {
     text-transform: uppercase;
     float: left;
     margin-left: 20px;
-}
-
-span {
-    color: @teal;
+    span {
+        color: @teal;
+    }
 }
 
 #reset-btn {
@@ -70,11 +67,10 @@ span {
     border: none;
     float: right;
     margin: 0.67em 10px 0.67em 0;
-}
-
-#reset-btn:hover {
-  background-color: @dark-teal;
-  text-decoration: none;
+    &:hover {
+      background-color: @dark-teal;
+      text-decoration: none;
+    }
 }
 
 /***********************
@@ -89,20 +85,18 @@ span {
     Players 
 ************************/
 
-h2 {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: @bright-blue;
-}
-
 .players {
     margin: 0 auto;
     text-align: center;
-}
-
-.player-one {
-    float: left;
-    margin-right: 50px;
+    .player-one {
+        float: left;
+        margin-right: 50px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: @bright-blue;
+    }
 }
 
 /***********************
@@ -173,10 +167,9 @@ li {
     display: inline-block;
     font-size: 26px;
     padding: 10px;
-}
-
-li a {
-    color: @teal;
+    & a {
+        color: @teal;
+    }
 }
 
 .copyright,
@@ -196,18 +189,17 @@ li a {
     .players {
         width: 240px;
     }
-
-    .game {
+   
+     .game {
         width: 300px;
         margin-top: 50px;
         margin-bottom: 80px;
-    }
-
-    .row-top,
-    .row-middle,
-    .row-bottom {
-        width: 300px;
-        height: 100px;
+        .row-top,
+        .row-middle,
+        .row-bottom {
+            width: 300px;
+            height: 100px;
+        }
     }
 
     .top-1, 
@@ -244,21 +236,11 @@ li a {
         margin-left: 20px;
     }
 
-    h2 {
-        font-size: 20px;
-    }
-
     .players {
         width: 400px;
-    }
-
-    .game {
-        width: 450px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        h2 {
+            font-size: 20px;
+        }
     }
 
     .fa-circle-o {
@@ -272,11 +254,19 @@ li a {
         font-size: 120px;
     }
 
-    .row-top,
-    .row-middle,
-    .row-bottom {
+   .game {
         width: 450px;
-        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        .row-top,
+        .row-middle,
+        .row-bottom {
+            width: 450px;
+            height: 150px;
+        }
     }
 
     .top-1, 
@@ -297,18 +287,11 @@ li a {
 
 @media only screen and (min-width: 768px) {  
 
-    h2 {
-        font-size: 22px;
-    }
-
     .players {
         width: 450px;
-    }
-
-    .game {
-        margin-top: 60px;
-        width: 500px;
-        height: 500px;
+        h2 {
+            font-size: 22px;
+        }
     }
 
     .fa-circle-o {
@@ -319,11 +302,16 @@ li a {
         font-size: 150px;
     }
 
-    .row-top,
-    .row-middle,
-    .row-bottom {
+    .game {
+        margin-top: 60px;
         width: 500px;
-        height: 166px;
+        height: 500px;
+        .row-top,
+        .row-middle,
+        .row-bottom {
+            width: 500px;
+            height: 166px;
+        }
     }
 
     .top-1, 
@@ -344,23 +332,17 @@ li a {
 
 @media only screen and (min-width: 1024px) {
 
-    h2 {
-        font-size: 26px;
-    }
 
     .players {
         margin-top: 180px;
         width: 150%;
         position: absolute;
-    }
-
-    .player-one {
-        margin-left: 60px;
-    }
-
-    .game {
-        position: relative;
-        height: 550px;
+        .player-one {
+            margin-left: 60px;
+        }
+        h2 {
+            font-size: 26px;
+        }
     }
 
     .fa-circle-o {
@@ -371,11 +353,15 @@ li a {
         font-size: 170px;
     }
 
-    .row-top,
-    .row-middle,
-    .row-bottom {
-        width: 550px;
-        height: 183px;
+  .game {
+        position: relative;
+        height: 550px;
+        .row-top,
+        .row-middle,
+        .row-bottom {
+            width: 550px;
+            height: 183px;
+        }
     }
 
     .top-1, 

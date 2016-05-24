@@ -1,7 +1,4 @@
 /***********************
-   Variables
-************************/
-/***********************
     General Styles
 ************************/
 * {
@@ -40,7 +37,7 @@ h1 {
   float: left;
   margin-left: 20px;
 }
-span {
+h1 span {
   color: #2c8593;
 }
 #reset-btn {
@@ -68,18 +65,18 @@ span {
 /***********************
     Players 
 ************************/
-h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #3fbfd2;
-}
 .players {
   margin: 0 auto;
   text-align: center;
 }
-.player-one {
+.players .player-one {
   float: left;
   margin-right: 50px;
+}
+.players h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #3fbfd2;
 }
 /***********************
     Game Styles
@@ -162,9 +159,9 @@ li a {
     margin-top: 50px;
     margin-bottom: 80px;
   }
-  .row-top,
-  .row-middle,
-  .row-bottom {
+  .game .row-top,
+  .game .row-middle,
+  .game .row-bottom {
     width: 300px;
     height: 100px;
   }
@@ -196,19 +193,11 @@ li a {
   h1 {
     margin-left: 20px;
   }
-  h2 {
-    font-size: 20px;
-  }
   .players {
     width: 400px;
   }
-  .game {
-    width: 450px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .players h2 {
+    font-size: 20px;
   }
   .fa-circle-o {
     padding-left: 20px;
@@ -219,9 +208,17 @@ li a {
     padding-left: 15px;
     font-size: 120px;
   }
-  .row-top,
-  .row-middle,
-  .row-bottom {
+  .game {
+    width: 450px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .game .row-top,
+  .game .row-middle,
+  .game .row-bottom {
     width: 450px;
     height: 150px;
   }
@@ -240,16 +237,11 @@ li a {
 }
 /*ipad potrait*/
 @media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 22px;
-  }
   .players {
     width: 450px;
   }
-  .game {
-    margin-top: 60px;
-    width: 500px;
-    height: 500px;
+  .players h2 {
+    font-size: 22px;
   }
   .fa-circle-o {
     font-size: 120px;
@@ -257,9 +249,14 @@ li a {
   .fa-times {
     font-size: 150px;
   }
-  .row-top,
-  .row-middle,
-  .row-bottom {
+  .game {
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+  }
+  .game .row-top,
+  .game .row-middle,
+  .game .row-bottom {
     width: 500px;
     height: 166px;
   }
@@ -278,20 +275,16 @@ li a {
 }
 /*ipad lanscape / small laptop*/
 @media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 26px;
-  }
   .players {
     margin-top: 180px;
     width: 150%;
     position: absolute;
   }
-  .player-one {
+  .players .player-one {
     margin-left: 60px;
   }
-  .game {
-    position: relative;
-    height: 550px;
+  .players h2 {
+    font-size: 26px;
   }
   .fa-circle-o {
     font-size: 150px;
@@ -299,9 +292,13 @@ li a {
   .fa-times {
     font-size: 170px;
   }
-  .row-top,
-  .row-middle,
-  .row-bottom {
+  .game {
+    position: relative;
+    height: 550px;
+  }
+  .game .row-top,
+  .game .row-middle,
+  .game .row-bottom {
     width: 550px;
     height: 183px;
   }
