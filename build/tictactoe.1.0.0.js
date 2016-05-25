@@ -44,8 +44,6 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
 	// require jQuery
 	var $ = __webpack_require__(1);
 	
